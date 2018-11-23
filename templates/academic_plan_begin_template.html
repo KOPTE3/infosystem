@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="base_academic_plan.css">
+	<style>
+		@media print {
+			@page {
+				size: portrait;
+			}
+		}
+	</style>
+</head>
+<body>
+
+<h1>Учебная программа</h1>
+
+<div class="center">по дисциплине &laquo;<span data-id="name"></span>&raquo; <br>(индекс <span data-id="code"></span>)
+</div>
+
+<section>
+	<header>Место и роль учебной дисциплины в структуре основной профессиональной образовательной программы подготовки <span data-id="direction.qualification"></span></header>
+
+	<div data-id="intro-text"></div>
+
+	<p>Учебная дисциплина изучается на <span data-id="period_of_study"></span>.</p>
+</section>
+
+<section>
+
+	<header>Планируемые результаты освоения учебной дисциплины</header>
+
+	<table border="1" class="competencies-table">
+		<colgroup>
+			<col style="width: 25%">
+			<col style="width: 55%">
+			<col style="width: 20%">
+		</colgroup>
+		<thead>
+		<tr>
+			<th>Формируемые компетенции <br> (код компетенции)</th>
+			<th>Перечень планируемых результатов обучения</th>
+			<th>Иные учебные дисциплины (модули), участвующие в формировании компетенций</th>
+		</tr>
+		</thead>
+		<tbody data-id="competencies-table">
+
+		</tbody>
+	</table>
+
+</section>
+
+</body>
+</html>

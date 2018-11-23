@@ -1,0 +1,39 @@
+.competencies {
+
+}
+
+.progressWrapper {
+	position: absolute;
+	display: block;
+	width: 100%;
+	top: 50%;
+	transform: translateY(-50%);
+
+	text-align: center;
+}
+
+.progress {
+	display: inline-block;
+}
+
+.contentWrapper {
+	display: block;
+	height: calc(100vh - 56px);
+	overflow: auto;
+
+	color: white;
+	margin-bottom: 12px;
+}
+
+.contentWrapperMargin {
+	margin: 12px 24px;
+}
+
+.add {
+	margin-left: auto !important;
+}
+
+.content {
+	color: #000;
+	padding: 6px 12px;
+}

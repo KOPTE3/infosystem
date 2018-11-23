@@ -1,0 +1,171 @@
+body {
+	hyphens: auto;
+	font-size: 14pt;
+	counter-reset: sections-counter;
+}
+
+h1 {
+	text-align: center;
+	text-decoration: underline;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 18pt;
+	margin: 0;
+	padding-top: 2em;
+}
+
+h2 {
+	font-weight: 700;
+	font-size: 14pt;
+	margin: 1.5em 0 1em;
+}
+
+h3 {
+	font-weight: 700;
+	font-size: 14pt;
+	margin: 1em 0 0.5em;
+}
+
+.center {
+	text-align: center;
+}
+
+.left {
+	text-align: left;
+}
+
+.strong {
+	font-weight: 700;
+}
+
+.right-block {
+	margin-left: 65%;
+}
+
+section {
+	text-align: justify;
+	counter-reset: subsections-counter;
+}
+
+.page {
+	page-break-after: always;
+}
+
+section > h2 {
+	counter-reset: subsubsections-counter;
+}
+
+section > header,
+section > h2,
+section > h3,
+section > p {
+	text-indent: 1.5em;
+}
+
+section > header:before {
+	margin-right: 1em;
+	content: counter(sections-counter, upper-roman) '.';
+	counter-increment: sections-counter;
+}
+
+section > h2:before {
+	margin-right: 1em;
+	content: counter(subsections-counter, decimal) '.';
+	counter-increment: subsections-counter;
+}
+
+section > h3:before {
+	margin-right: 1em;
+	content: counter(subsections-counter, decimal) '.' counter(subsubsections-counter, decimal) '.';
+	counter-increment: subsubsections-counter;
+}
+
+table, tr, td, th {
+	position: relative;
+}
+
+td > div.vertical {
+	transform-origin: 0 50%;
+	transform: rotate(-90deg);
+	/*white-space: nowrap;*/
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 270px;
+	text-align: left;
+}
+
+header {
+	margin-top: 1.5em;
+	margin-bottom: 1em;
+	font-weight: 700;
+	font-size: 16pt;
+	text-indent: 1.5em;
+}
+
+p {
+	margin: 0;
+}
+
+table {
+	width: 100%;
+	font-size: 10pt;
+	border-collapse: collapse !important;
+}
+
+table, th, td {
+	border: 1px solid black !important;
+}
+
+thead {
+	text-align: center;
+}
+
+td {
+	padding: 4px;
+}
+
+table.structure-header-table {
+	height: 300px;
+	min-height: 300px;
+	text-align: center;
+	margin-top: 1em;
+}
+
+table.structure-table {
+	text-align: center;
+}
+
+table.structure-table tbody td:first-of-type {
+	text-align: left;
+}
+
+table.structure-header-table tr:first-of-type {
+	height: 30px;
+}
+
+table.short-structure-table tr.second {
+	height: 250px;
+}
+
+td.center {
+	text-align: center !important;
+}
+
+thead {
+	display: table-header-group;
+}
+
+.last-footer {
+	margin-top: 3cm;
+	page-break-before: avoid;
+}
+
+table.competencies-table p {
+	text-indent: 1.5em;
+}
+
+table.competencies-table td {
+	vertical-align: top;
+}

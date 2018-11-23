@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="base_academic_plan.css">
+	<style>
+		@media print {
+			@page {
+				size: landscape;
+			}
+		}
+	</style>
+</head>
+<body class="thematic">
+
+<section class="page">
+	<div class="center" style="margin-bottom: 3.5cm;">
+		<div><strong>Министерство обороны Российской Федерации</strong></div>
+		<div>Военная академия воздушно-космической обороны</div>
+		<div>имени Маршала Советского Союза Г.К. Жукова</div>
+	</div>
+
+	<div>
+		<div class="center strong">Кафедра <span data-id="department_name"></span></div>
+		<h1 class="center">Тематический план</h1>
+		<div class="center">изучения дисциплины &laquo;<span data-id="name"></span>&raquo;</div>
+
+		<div>
+			<div><strong>по направлению подготовки:</strong> <span data-id="direction.code"></span> &laquo;<span
+				data-id="direction.name"></span>&raquo;
+			</div>
+			<div><strong>по военной специальности:</strong> &laquo;<span data-id="specialty.name"></span>&raquo;</div>
+		</div>
+	</div>
+</section>
+
+<section class="page">
+
+	<div class="right-block">
+		<div style="text-transform: uppercase; letter-spacing: 0.5em;">Утверждаю</div>
+		<div><span data-id="approver"></span></div>
+		<div>&laquo;_____&raquo;&nbsp;___________________&nbsp;201___&nbsp;г.</div>
+	</div>
+
+	<div class="center">
+		<div class="strong">Кафедра <span data-id="department_name"></span></div>
+		<h1 style="padding-top: 0.5cm;">Тематический план</h1>
+		<div>изучения дисциплины &laquo;<span data-id="name"></span>&raquo;</div>
+		<div>по военной специальности &laquo;<span data-id="specialty.name"></span>&raquo;</div>
+	</div>
+
+
+	<header style="margin-top: 12px;">Распределение учебного времени по семестрам и видам учебных занятий</header>
+
+	<table class="short-structure-table" border="1">
+		<col span="1" style="width: 10%"/>
+		<col span="15" style="width: 5%"/>
+		<col span="1" style="width: 15%"/>
+		<tbody data-id="short-structure-table">
+		<tr>
+			<td rowspan="2">
+				<div class="vertical">Семестры</div>
+			</td>
+			<td rowspan="2">
+				<div class="vertical">Всего часов учебных занятий</div>
+			</td>
+			<td rowspan="2">
+				<div class="vertical">В том числе учебных занятий <br> с преподавателем</div>
+			</td>
+			<td colspan="12">Из них по видам учебных занятий</td>
+			<td rowspan="2">
+				<div class="vertical">Время, отводимое на <br> самостоятельную работу</div>
+			</td>
+			<td rowspan="2">
+				<div class="vertical">Отчётность за семестр</div>
+			</td>
+		</tr>
+		<tr class="second">
+			<td>
+				<div class="vertical">лекции</div>
+			</td>
+			<td>
+				<div class="vertical">семинары</div>
+			</td>
+			<td>
+				<div class="vertical">лабораторные работы</div>
+			</td>
+			<td>
+				<div class="vertical">практические занятия</div>
+			</td>
+			<td>
+				<div class="vertical">групповые упражнения</div>
+			</td>
+			<td>
+				<div class="vertical">групповые занятия</div>
+			</td>
+			<td>
+				<div class="vertical">тактические и тактико-специальные <br> занятия и учения</div>
+			</td>
+			<td>
+				<div class="vertical">КШУ, военные (военно-специальные) <br> игры, конференции</div>
+			</td>
+			<td>
+				<div class="vertical">контрольные работы</div>
+			</td>
+			<td>
+				<div class="vertical">курсовые работы (проекты, задачи)</div>
+			</td>
+			<td>
+				<div class="vertical">самостоятельная работа под <br> руководством преподавателя</div>
+			</td>
+			<td>
+				<div class="vertical">экзамен, зачеты</div>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+
+</section>
+
+<section class="page">
+	<header>План изучения дисциплины по видам учебных занятий</header>
+	<table>
+		<col span="1" style="width: 3%"/>
+		<col span="1" style="width: 10%"/>
+		<col span="1" style="width: 5%"/>
+		<col span="1" style="width: 50%"/>
+		<col span="1" style="width: 15%"/>
+		<col span="1" style="width: 12%"/>
+		<col span="1" style="width: 5%"/>
+		<tbody>
+		<tr>
+			<td rowspan="2">№ п/п</td>
+			<td rowspan="2">Виды учебных занятий</td>
+			<td rowspan="2">Количест-во часов</td>
+			<td rowspan="2">Семестры, номера и наименования разделов и тем, темы занятий и учебные вопросы</td>
+			<td rowspan="2">МТО занятий (в т.ч. ТСО)</td>
+			<td colspan="2">Задания на самостоятельную работу</td>
+		</tr>
+		<tr>
+			<td>литература</td>
+			<td>время (в часах)</td>
+		</tr>
+		</tbody>
+	</table>
+
+	<table>
+		<col span="1" style="width: 3%"/>
+		<col span="1" style="width: 10%"/>
+		<col span="1" style="width: 5%"/>
+		<col span="1" style="width: 50%"/>
+		<col span="1" style="width: 15%"/>
+		<col span="1" style="width: 12%"/>
+		<col span="1" style="width: 5%"/>
+		<thead>
+		<tr>
+			<th>1</th>
+			<th>2</th>
+			<th>3</th>
+			<th>4</th>
+			<th>5</th>
+			<th>6</th>
+			<th>7</th>
+		</tr>
+		</thead>
+		<tbody data-id="thematic-table">
+
+		</tbody>
+	</table>
+
+</section>
+
+<section>
+	<header>Литература</header>
+	<div data-id="literature"></div>
+</section>
+
+<section class="page">
+	<header>Организационно-методические указания, взаимосвязь с другими дисциплинами</header>
+	<div data-id="themes_plan_iv"></div>
+
+	<div style="position: relative; margin-top: 3cm;">
+		<div style="border-bottom: 1px solid black; width: 10cm; position: absolute; right: 0;"></div>
+		<div style="width: 10cm; text-align: center; font-size: 10pt; position: absolute; right: 0;">
+			(должность, воинское звание, фамилия, подпись)
+		</div>
+		<div>&nbsp;</div>
+	</div>
+
+	<div style="position: relative; margin-top: 0.5cm;">
+		<div style="width: 10cm; position: absolute; right: 0;">
+			&laquo;_____&raquo;&nbsp;___________________&nbsp;201___&nbsp;г.
+		</div>
+	</div>
+</section>
+
+<section>
+	<header>Изменения и дополнения в тематическом плане</header>
+<table border="1">
+	<col span="1" style="width: 5%"/>
+	<col span="1" style="width: 10%"/>
+	<col span="1" style="width: 25%"/>
+	<col span="1" style="width: 40%"/>
+	<col span="1" style="width: 10%"/>
+	<col span="1" style="width: 10%"/>
+	<thead>
+	<tr>
+		<th>№ изменения</th>
+		<th>Дата</th>
+		<th>Основание для корректировки тематического плана</th>
+		<th>Краткое содержание внесенных изменений и дополнений</th>
+		<th>Кем внесены изменения и дополнения</th>
+		<th>Подпись начальника кафедры</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	</tbody>
+</table>
+</section>
+
+
+</body>
+</html>

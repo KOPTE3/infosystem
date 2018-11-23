@@ -1,0 +1,77 @@
+.disciplines {
+
+}
+
+.progressWrapper {
+	position: absolute;
+	display: block;
+	width: 100%;
+	top: 50%;
+	transform: translateY(-50%);
+
+	text-align: center;
+}
+
+.progress {
+	display: inline-block;
+}
+
+.contentWrapper {
+	display: block;
+	height: calc(100vh - 64px - 24px);
+	overflow: auto;
+
+	color: white;
+	margin-bottom: 12px;
+}
+
+.contentWrapperMargin {
+	margin: 12px 24px;
+}
+
+.add {
+	margin-left: auto !important;
+}
+
+.addLeftMargin {
+	margin-left: 12px !important;
+}
+
+.content {
+	color: #000;
+	padding: 6px 12px;
+	margin-bottom: 12px;
+}
+
+.content:last-of-type {
+	margin-bottom: 0;
+}
+
+.chips {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.addLinkButton {
+	display: inline-block !important;
+	margin-left: 12px !important;
+}
+
+.headerCell {
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.lessonPaper {
+	margin: 8px;
+	padding: 6px;
+}
+
+.compListItem {
+	margin: 12px;
+}
+
+.compListItemHalf {
+	
+}

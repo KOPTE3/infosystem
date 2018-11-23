@@ -1,0 +1,67 @@
+/*
+ * @NOTE: Prepend a `~` to css file paths that are in your node_modules
+ *        See https://github.com/webpack-contrib/sass-loader#imports
+ */
+@import "~font-awesome/css/font-awesome.css";
+@import "~typeface-roboto-multilang";
+@import "~typeface-roboto-multilang/cyrillic.css";
+@import "~react-table/react-table.css";
+@import "~froala-editor/css/froala_style.min.css";
+@import "~froala-editor/css/froala_editor.pkgd.min.css";
+
+body {
+	position: relative;
+	color: white;
+	height: 100vh;
+	background-color: #232c39 !important;
+	background-image: linear-gradient(45deg, rgba(0, 216, 255, 0.5) 10%, rgba(0, 1, 127, 0.7)) !important;
+	font-family: 'Roboto', Arial, Helvetica, Helvetica Neue, serif;
+	overflow-y: hidden;
+}
+
+#root {
+	min-height: 100vh;
+}
+
+a {
+	opacity: 0.75;
+}
+
+a:hover {
+	opacity: 1;
+	cursor: pointer;
+}
+
+@font-face {
+	font-family: 'Material Icons';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Material Icons'),
+	local('MaterialIcons-Regular'),
+	url(MaterialIcons-Regular.woff2) format('woff2');
+}
+
+.material-icons {
+	font-family: 'Material Icons';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 24px; /* Preferred icon size */
+	display: inline-block;
+	line-height: 1;
+	text-transform: none;
+	letter-spacing: normal;
+	word-wrap: normal;
+	white-space: nowrap;
+	direction: ltr;
+
+	/* Support for all WebKit browsers. */
+	-webkit-font-smoothing: antialiased;
+	/* Support for Safari and Chrome. */
+	text-rendering: optimizeLegibility;
+
+	/* Support for Firefox. */
+	-moz-osx-font-smoothing: grayscale;
+
+	/* Support for IE. */
+	font-feature-settings: 'liga';
+}

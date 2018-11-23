@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="base_academic_plan.css">
+	<style>
+		@media print {
+			@page {
+				size: portrait;
+			}
+		}
+
+		body {
+			counter-reset: sections-counter 3 !important;
+		}
+
+		section > h2.counter-start-two {
+			counter-reset: subsections-counter 2;
+		}
+	</style>
+</head>
+<body>
+
+
+<section data-id="content-of-discipline-parent">
+
+	<h2 class="counter-start-two">Содержание разделов (тем) учебной дисциплины</h2>
+
+	<div data-id="content-of-discipline"></div>
+
+</section>
+
+<section>
+	<header>Учебно-методическое и информационное обеспечение дисциплины</header>
+	<h2>Учебная литература</h2>
+	<div data-id="4_1"></div>
+	<h2>Программное обеспечение и информационно-справочные системы</h2>
+	<div data-id="4_2"></div>
+	<h2>Интернет-ресурсы</h2>
+	<div data-id="4_3"></div>
+</section>
+
+<section>
+	<header>Методические указания обучающимся по освоению дисциплины</header>
+	<div data-id="5"></div>
+</section>
+
+<section>
+	<header>Методические указания преподавателю по порядку подготовки и проведения учебных занятий, текущего контроля
+		успеваемости и промежуточной аттестации обучающихся по дисциплине
+	</header>
+	<div data-id="6"></div>
+</section>
+
+<section>
+	<header>Учебно-материальная база, необходимая для осуществления образовательного процесса по дисциплине</header>
+	<div data-id="7"></div>
+</section>
+
+<section>
+	<header>Фонд оценочных средств для текущего контроля успеваемости и промежуточной аттестации обучающихся по
+		дисциплине
+	</header>
+	<h2>Текущий контроль</h2>
+	<div data-id="8_1"></div>
+	<h3>Критерии оценки текущего контроля</h3>
+	<div data-id="8_1_1"></div>
+	<h3>Оценочные средства текущего контроля</h3>
+	<div data-id="8_1_2"></div>
+	<h2>Промежуточная аттестация</h2>
+	<div data-id="8_2"></div>
+	<h3>Критерии оценки промежуточной аттестации</h3>
+	<div data-id="8_2_1"></div>
+	<h3>Перечень разделов, тем, типовых вопросов, практических заданий, выносимых на промежуточную аттестацию</h3>
+	<div data-id="8_2_2"></div>
+</section>
+
+<section class="last-footer">
+	<p>
+		Программа учебной дисциплины рассмотрена и одобрена на заседании кафедры, протокол №&nbsp;____________&nbsp;от&nbsp;&laquo;_____&raquo;&nbsp;___________________&nbsp;201___&nbsp;г.
+	</p>
+
+	<p style="width: calc(100% - 11cm); margin-top: 2cm;">
+		Заведующий кафедрой <span data-id="department_name"></span>
+	</p>
+
+	<div style="position: relative">
+		<div style="border-bottom: 1px solid black; width: 10cm; position: absolute; right: 0;"></div>
+		<div style="width: 10cm; text-align: center; font-size: 10pt; position: absolute; right: 0;">
+			(должность, воинское звание, фамилия, подпись)
+		</div>
+		<div>&nbsp;</div>
+	</div>
+
+	<div style="position: relative; margin-top: 0.5cm;">
+		<div style="width: 10cm; position: absolute; right: 0;">
+			&laquo;_____&raquo;&nbsp;___________________&nbsp;201___&nbsp;г.
+		</div>
+	</div>
+
+</section>
+
+</body>
+</html>

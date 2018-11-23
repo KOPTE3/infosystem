@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="base_academic_plan.css">
+	<style>
+		@media print {
+			@page {
+				size: landscape;
+			}
+		}
+
+		body {
+			counter-reset: sections-counter 2 !important;
+		}
+	</style>
+</head>
+<body>
+
+<section class="landscape" data-id="content_of_discipline-parent">
+	<header>Структура и содержание учебной дисциплины</header>
+	<h2>Распределение учебного времени, выделенного на контактную работу обучающихся с преподавателем (по семестрам,
+		разделам, темам и видам учебных занятий), и на самостоятельную работу обучающихся</h2>
+	<p>Общая трудоемкость (объем) дисциплины составляет <span data-id="complexity"></span> зачетных единиц, <span
+		data-id="complexity_hours"></span> академических часа.</p>
+	<p>Время на занятия, проводимые в интерактивной форме, составляет <span data-id="teacher_time_all"></span> часов
+		учебных
+		занятий с преподавателем.</p>
+
+	<table class="structure-header-table">
+		<col span="1" style="width: 40%"/>
+		<col span="15" style="width: 4%"/>
+		<tbody>
+		<tr>
+			<td rowspan="2">Номера и наименование разделов и тем</td>
+			<td rowspan="2">
+				<div class="vertical">Всего часов учебных занятий</div>
+			</td>
+			<td rowspan="2">
+				<div class="vertical">В том числе учебных занятий <br> с преподавателем</div>
+			</td>
+			<td colspan="12">Из них по видам учебных занятий</td>
+			<td rowspan="2">
+				<div class="vertical">Время, отводимое на <br> самостоятельную работу</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="vertical">лекции</div>
+			</td>
+			<td>
+				<div class="vertical">семинары</div>
+			</td>
+			<td>
+				<div class="vertical">лабораторные работы</div>
+			</td>
+			<td>
+				<div class="vertical">практические занятия</div>
+			</td>
+			<td>
+				<div class="vertical">групповые упражнения</div>
+			</td>
+			<td>
+				<div class="vertical">групповые занятия</div>
+			</td>
+			<td>
+				<div class="vertical">тактические и тактико-специальные <br> занятия и учения</div>
+			</td>
+			<td>
+				<div class="vertical">КШУ, военные, (военно-специальные) игры</div>
+			</td>
+			<td>
+				<div class="vertical">контрольные работы</div>
+			</td>
+			<td>
+				<div class="vertical">курсовые работы (проекты, задачи)</div>
+			</td>
+			<td>
+				<div class="vertical">самостоятельная работа под <br> руководством преподавателя</div>
+			</td>
+			<td>
+				<div class="vertical">экзамен, зачеты</div>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+
+	<table class="structure-table" border="1">
+		<col span="1" style="width: 40%"/>
+		<col span="15" style="width: 4%"/>
+		<thead>
+		<tr>
+			<th>1</th>
+			<th>2</th>
+			<th>3</th>
+			<th>4</th>
+			<th>5</th>
+			<th>6</th>
+			<th>7</th>
+			<th>8</th>
+			<th>9</th>
+			<th>10</th>
+			<th>11</th>
+			<th>12</th>
+			<th>13</th>
+			<th>14</th>
+			<th>15</th>
+			<th>16</th>
+		</tr>
+		</thead>
+		<tbody data-id="structure-table"></tbody>
+	</table>
+
+	<h2>График рубежного контроля успеваемости обучающихся</h2>
+
+	<table border="1" class="center">
+		<thead>
+		<tr>
+			<td rowspan="2">&nbsp;</td>
+			<td data-id="tests-table-header-helper">Номера тем</td>
+		</tr>
+		<tr class="strong" data-id="tests-table-header">
+
+		</tr>
+		</thead>
+		<tbody>
+		<tr data-id="tests-table-first-row">
+			<td class="left">Планируемый рубежный контроль</td>
+		</tr>
+		<tr data-id="tests-table-second-row">
+			<td class="left">Объем в часах</td>
+		</tr>
+
+		</tbody>
+	</table>
+
+	<div class="center">
+		<small><strong>Условные обозначения</strong></small>
+	</div>
+
+	<table border="1">
+		<thead>
+		<tr>
+			<th>Виды рубежного контроля</th>
+			<th>Сокращенное наименование</th>
+		</tr>
+		</thead>
+		<tbody data-id="tests-legend-table"></tbody>
+	</table>
+
+</section>
+
+
+</body>
+</html>
